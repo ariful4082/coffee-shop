@@ -1,0 +1,482 @@
+*{margin:0;padding:0;}
+/* Google Fonts */
+
+/* font-family: 'Montez', cursive; */
+/* font-family: 'Lato', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montez');
+
+
+html,body{
+	height:100%;
+}
+body{
+	
+}
+a{
+	text-decoration:none;
+	outline:none;
+}
+.main{
+	 padding: 0 5%;
+}
+.section-padding{padding:100px 0}
+.fix{
+	overflow:hidden;
+}
+/*
+=======================================
+ Header Start 
+=======================================
+ */
+header.header {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    height: 100px;
+}
+header.header:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(232, 232, 232);
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+ header.header .logo {
+    width: 25%;
+    float: left;
+}
+
+header.header .logo a h1 {
+    text-transform: uppercase;
+    font: 400 80px 'Montez', cursive;
+    color: #9d9c9d;
+}
+header.header .logo a h1 span{
+    font: 300 20px 'Lato', sans-serif;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+
+}
+	header.header .logo a h1 span.color {
+    left: 200px;
+    font-weight: 900;
+    top: 47%;
+}
+
+header.header nav.menu {
+    width: 75%;
+    float: right;
+    margin: 30px 0;
+}
+
+nav.menu ul {
+    float: right;
+    list-style: none;
+}
+
+nav.menu ul li {
+    float: left;
+	border-right:1px solid #E8E8E8;
+	padding:0 20px;
+	background:#fff;
+}
+
+nav.menu ul li a {
+    padding: 10px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+	color:#9d9c9c;
+	
+}
+nav.menu ul li:last-child {
+    border-right: 0;
+    border-radius: 0 20px 20px 0;
+}
+nav.menu ul li:first-child {
+    border-radius:20px 0 0 20px;
+}
+nav.menu ul li:hover, nav.menu ul li a:hover{
+	background:#664735;
+	color:#fff;
+}
+
+/*
+=======================================
+ Header End 
+=======================================
+ */
+/*
+=======================================
+ Header-Slider Start 
+=======================================
+ */
+section.header-slide {
+    background: #E8E8E8;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+	    
+    z-index: 0;
+}.header-slide-carousel{
+	margin-bottom: 40px;
+}
+section.header-slide .main, section.header-slide .slide-item {
+    height: 100%;
+}
+
+.d-table {
+    display: table;
+    height: 100%;
+}
+
+.d-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+section.header-slide .slide-left {
+    width: 60%;
+    float: left;
+}
+
+section.header-slide .slide-left .slide-content {
+    padding: 50px 130px;
+}
+
+.slide-content h2 {
+    font: 700 20px Nirmala UI;
+    color: #9d9c9d;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.slide-content p {
+    font: 400 12px/20px tahoma;
+    color: #9d9c9d;
+}
+
+.slide-content a {
+    font: italic 600 12px tahoma;
+    color: #6f6d6d;
+    display: inline-block;
+    padding: 5px 0;
+}
+section.header-slide .slide-right {
+    width: 40%;
+    float: right;
+    text-align: center;
+}
+
+.slide-right .slide-img {
+    padding: 50px;
+}
+
+.slide-img img {
+    max-width: 100%;
+}
+.header-slide-carousel .owl-nav button i {
+    font-size: 40px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    margin-top: -20px;
+}
+button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+	margin-top: -20px;
+}
+button.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    
+}
+.header-slide .owl-theme .owl-dots .owl-dot.active span{
+	background:#CFCFCF;
+	
+}
+.header-slide .owl-theme .owl-dots .owl-dot span {
+    width: 9px;
+    height: 9px;
+    margin: 5px 2px;
+    background: #664735;
+	border:0;
+}
+.header-slide .owl-theme .owl-dots .owl-dot {
+    outline: none;
+} 
+
+
+/*
+=======================================
+ Header-Slider End 
+=======================================
+ */
+/*
+=======================================
+ Service Start 
+=======================================
+ */
+ .service-list .service-item {
+    width: 26%;
+    float: left;
+    padding: 0 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.service-list {
+    margin-left: -10px;
+    overflow: hidden;
+}
+.service-list .service-item p>i {
+    font-size: 60px;
+    color: #683629;
+}
+
+.service-list .service-item 
+ h4 {
+    font: 700 29px Nirmala UI;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #9D9C9D;
+}
+.service-list .service-item p {
+    font: 500 14px Candara;
+    color: #b5b4b5;
+}
+
+.service-list .service-item a {
+    font: italic 600 16px tahoma;
+    color: #826251;
+    margin: 10px 0;
+}
+/*
+=======================================
+ Service End 
+=======================================
+ */
+/*
+=======================================
+About Start
+=======================================
+ */
+ section.about .about-left {
+    width: 50%;
+    height: 500px;
+    float: left;
+    background: #845f51;
+}
+
+section.about .about-right {
+    width: 50%;
+    float: right;
+    background: #664735;
+    color: #fff;
+    height: 500px;
+}
+
+article.about-content {
+    padding: 50px;
+}
+
+article.about-content h5 {
+    font: 600 20px 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+article.about-content p {
+    font: 300 14px/30px 'Lato', sans-serif;
+    margin-bottom: 30px;
+}
+
+article.about-content a {
+    background: #fff;
+    padding: 15px 20px;
+    font: italic 300 16px 'Lato', sans-serif;
+    color: #664735;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 5px 3px #000;
+}
+
+article.about-content a:hover {
+    background: transparent;
+    color: #fff;
+}
+/*
+=======================================
+About End
+=======================================
+ */
+ 
+/*
+=======================================
+work Video Start
+=======================================
+ */
+ section.workVideo {
+    text-align: center;
+}
+
+.section-heading {}
+
+.section-heading h2 {
+	font: 600 20px 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #664735;
+	margin-bottom: 20px;
+}
+.section-heading p i {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-heading p {
+    font: 300 14px/20px 'Lato', sans-serif;
+    padding: 0 60px;
+    margin-bottom: 20px;
+    color: #845F51;
+}
+
+.video-area {
+    background: #F3B9B9;
+    height: 450px;
+    
+}
+
+.video-area h5 {
+    font: 600 40px 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding-top: 160px;
+}
+.video-icon a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.video-icon a i {
+    font-size: 40px;
+    padding-top: 18px;
+}
+
+.video-icon a:hover {
+    background: #fff;
+    color: #F3B9B9;
+}
+/*
+=======================================
+work Video End
+=======================================
+ */
+/*
+=======================================
+Footer Top Start
+=======================================
+ */
+.footer-top-item {
+    float: left;
+    width: 20%;
+    padding: 0 2.5%;
+    color: #fff;
+}
+.footer-top-item h4 {
+    font: 600 20px tahoma;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+section.footer-top {
+    background: #755949;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.footer-top-item p {
+    font: 400 14px/25px lato;
+}
+.social-icon ul {
+    list-style: none;
+}
+
+.social-icon ul li {
+    display: inline-block;
+}
+
+.social-icon ul li a {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+	transition:.5s;
+}
+
+.social-icon ul li a i {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.social-icon ul li a:hover {
+    color: #755949;
+    background: #fff;
+}
+
+/*
+=======================================
+Footer Top End
+=======================================
+ */
+/*
+=======================================
+Footer start
+=======================================
+ */
+ footer.footer-area {
+    padding: 16px 0;
+    display: block;
+}
+
+.copyright {
+    padding: 0px 20px;
+}
+
+.copyright p {
+    font: 500 14px tahoma;
+    color: #755949;
+}
+footer.footer-area a {
+    text-align: center;
+    border: 1px solid #755949;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -17px auto 0 auto;
+    display: block;
+}
+
+footer.footer-area a i {
+    font-size: 30px;
+}
+/*
+=======================================
+Footer End
+=======================================
+ */
+ 
